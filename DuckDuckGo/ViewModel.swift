@@ -29,7 +29,7 @@ class ViewModel: NSObject {
 			.flatMap(.latest) { text -> SignalProducer<(Data, URLResponse), AnyError> in
 				return self.search(text: text) }
 			.map { (data, response) -> [JSON] in return JSON(data: data)["RelatedTopics"].arrayValue }
-			.observe(on: UIScheduler())
+			.observe(on: QueueScheduler(qos: .default, name: "fetchQ"))
 		
 		searchResults.observe { array in
 			switch array {
