@@ -36,9 +36,9 @@ class ViewController: UIViewController {
 		// create view model
 		let textSignal = self.searchBar.reactive.continuousTextValues
 		viewModel = ViewModel(signal: textSignal)
-		viewModel.dataSource.producer.startWithResult{ _ in self.tableView.reloadData() }
 		
 		// set up table view
+        tableView.reactive.reloadData <~ viewModel.dataSource.map { _ in }
 		tableView.tableFooterView = UIView(frame: CGRect.zero)
 		tableView.estimatedRowHeight = 80
 		tableView.rowHeight = UITableViewAutomaticDimension
