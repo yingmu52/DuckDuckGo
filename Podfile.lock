@@ -1,0 +1,26 @@
+PODS:
+  - ReactiveCocoa (6.0.0):
+    - ReactiveSwift (~> 2.0)
+  - ReactiveSwift (2.0.0):
+    - Result (~> 3.2)
+  - Result (3.2.3)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - ReactiveCocoa (~> 6.0)
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: ca689e37b6a922f0273918220d735c43368de550
+  ReactiveSwift: 36339167e571774d936482d0f6512f5118a74731
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 8d6e7bca726d4a131faec300d3d1d1367919ff1f
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2006A1CAD8E761D11F03C5 /* Pods_DuckDuckGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43E9E31DAC97A4C97B4C00D /* Pods_DuckDuckGo.framework */; };
+		A0AA3D511F2ECA4400181D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA3D501F2ECA4400181D6D /* AppDelegate.swift */; };
+		A0AA3D531F2ECA4400181D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA3D521F2ECA4400181D6D /* ViewController.swift */; };
+		A0AA3D561F2ECA4400181D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AA3D541F2ECA4400181D6D /* Main.storyboard */; };
+		A0AA3D581F2ECA4500181D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AA3D571F2ECA4400181D6D /* Assets.xcassets */; };
+		A0AA3D5B1F2ECA4500181D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AA3D591F2ECA4500181D6D /* LaunchScreen.storyboard */; };
+		A0AA3D631F2ECE4300181D6D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA3D621F2ECE4300181D6D /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0AA3D4D1F2ECA4400181D6D /* DuckDuckGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckDuckGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AA3D501F2ECA4400181D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0AA3D521F2ECA4400181D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0AA3D551F2ECA4400181D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0AA3D571F2ECA4400181D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0AA3D5A1F2ECA4500181D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0AA3D5C1F2ECA4500181D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AA3D621F2ECE4300181D6D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D43E9E31DAC97A4C97B4C00D /* Pods_DuckDuckGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDuckGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC04746BB9E4A6A5B3C5489F /* Pods-DuckDuckGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo.release.xcconfig"; sourceTree = "<group>"; };
+		EBEB136DB57580710E60BE60 /* Pods-DuckDuckGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0AA3D4A1F2ECA4400181D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2006A1CAD8E761D11F03C5 /* Pods_DuckDuckGo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF53E46B9407582BF3CB7C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBEB136DB57580710E60BE60 /* Pods-DuckDuckGo.debug.xcconfig */,
+				DC04746BB9E4A6A5B3C5489F /* Pods-DuckDuckGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0AA3D441F2ECA4400181D6D = {
+			isa = PBXGroup;
+			children = (
+				A0AA3D4F1F2ECA4400181D6D /* DuckDuckGo */,
+				A0AA3D4E1F2ECA4400181D6D /* Products */,
+				5DF53E46B9407582BF3CB7C8 /* Pods */,
+				E0FA5ADAF8D5C5E6FFB283C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0AA3D4E1F2ECA4400181D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA3D4D1F2ECA4400181D6D /* DuckDuckGo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0AA3D4F1F2ECA4400181D6D /* DuckDuckGo */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA3D501F2ECA4400181D6D /* AppDelegate.swift */,
+				A0AA3D521F2ECA4400181D6D /* ViewController.swift */,
+				A0AA3D621F2ECE4300181D6D /* ViewModel.swift */,
+				A0AA3D541F2ECA4400181D6D /* Main.storyboard */,
+				A0AA3D571F2ECA4400181D6D /* Assets.xcassets */,
+				A0AA3D591F2ECA4500181D6D /* LaunchScreen.storyboard */,
+				A0AA3D5C1F2ECA4500181D6D /* Info.plist */,
+			);
+			path = DuckDuckGo;
+			sourceTree = "<group>";
+		};
+		E0FA5ADAF8D5C5E6FFB283C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D43E9E31DAC97A4C97B4C00D /* Pods_DuckDuckGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0AA3D4C1F2ECA4400181D6D /* DuckDuckGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0AA3D5F1F2ECA4500181D6D /* Build configuration list for PBXNativeTarget "DuckDuckGo" */;
+			buildPhases = (
+				D35672180BBD33A17861487C /* [CP] Check Pods Manifest.lock */,
+				A0AA3D491F2ECA4400181D6D /* Sources */,
+				A0AA3D4A1F2ECA4400181D6D /* Frameworks */,
+				A0AA3D4B1F2ECA4400181D6D /* Resources */,
+				AE80498542A2818C8CD58CDA /* [CP] Embed Pods Frameworks */,
+				CA09807E313EE6AF84DE6D26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuckDuckGo;
+			productName = DuckDuckGo;
+			productReference = A0AA3D4D1F2ECA4400181D6D /* DuckDuckGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0AA3D451F2ECA4400181D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Xinyi Zhuang";
+				TargetAttributes = {
+					A0AA3D4C1F2ECA4400181D6D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5Z63N39FV7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0AA3D481F2ECA4400181D6D /* Build configuration list for PBXProject "DuckDuckGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0AA3D441F2ECA4400181D6D;
+			productRefGroup = A0AA3D4E1F2ECA4400181D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0AA3D4C1F2ECA4400181D6D /* DuckDuckGo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0AA3D4B1F2ECA4400181D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AA3D5B1F2ECA4500181D6D /* LaunchScreen.storyboard in Resources */,
+				A0AA3D581F2ECA4500181D6D /* Assets.xcassets in Resources */,
+				A0AA3D561F2ECA4400181D6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE80498542A2818C8CD58CDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA09807E313EE6AF84DE6D26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35672180BBD33A17861487C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0AA3D491F2ECA4400181D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AA3D531F2ECA4400181D6D /* ViewController.swift in Sources */,
+				A0AA3D631F2ECE4300181D6D /* ViewModel.swift in Sources */,
+				A0AA3D511F2ECA4400181D6D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0AA3D541F2ECA4400181D6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0AA3D551F2ECA4400181D6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0AA3D591F2ECA4500181D6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0AA3D5A1F2ECA4500181D6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0AA3D5D1F2ECA4500181D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0AA3D5E1F2ECA4500181D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0AA3D601F2ECA4500181D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEB136DB57580710E60BE60 /* Pods-DuckDuckGo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5Z63N39FV7;
+				INFOPLIST_FILE = DuckDuckGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.x52.DuckDuckGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A0AA3D611F2ECA4500181D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC04746BB9E4A6A5B3C5489F /* Pods-DuckDuckGo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5Z63N39FV7;
+				INFOPLIST_FILE = DuckDuckGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.x52.DuckDuckGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0AA3D481F2ECA4400181D6D /* Build configuration list for PBXProject "DuckDuckGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AA3D5D1F2ECA4500181D6D /* Debug */,
+				A0AA3D5E1F2ECA4500181D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0AA3D5F1F2ECA4500181D6D /* Build configuration list for PBXNativeTarget "DuckDuckGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AA3D601F2ECA4500181D6D /* Debug */,
+				A0AA3D611F2ECA4500181D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0AA3D451F2ECA4400181D6D /* Project object */;
+}
