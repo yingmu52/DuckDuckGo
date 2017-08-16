@@ -21,7 +21,7 @@ class DuckCell: UITableViewCell {
 class ViewController: UIViewController {
 	
 	@IBOutlet var tableView : UITableView!
-	var viewModel : ViewModel!
+	var viewModel = ViewModel()
 	lazy var searchBar : UISearchBar = {
 		let bar = UISearchBar()
 		bar.showsScopeBar = true
@@ -34,8 +34,7 @@ class ViewController: UIViewController {
 		navigationItem.titleView = searchBar
 		
 		// create view model
-		let textSignal = self.searchBar.reactive.continuousTextValues
-		viewModel = ViewModel(signal: textSignal)
+        viewModel.searchText <~ self.searchBar.reactive.continuousTextValues.skipNil()
 		
 		// set up table view
         tableView.reactive.reloadData <~ viewModel.dataSource.map { _ in }
