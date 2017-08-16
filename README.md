@@ -19,3 +19,6 @@ This project showcases [MVVM architecture](https://msdn.microsoft.com/en-us/libr
 - [MVVM + Swift + ReactiveCocoa 5](https://medium.com/@hilmarbirgir/mvvm-swift-reactivecocoa-5-44274edaa56e)
 - [ReactiveViewModel](https://github.com/ReactiveCocoa/ReactiveViewModel)
 - [ReactiveSwift Best Practices](https://github.com/ReactiveCocoa/ReactiveSwift/blob/master/Documentation/APIContracts.md#best-practices)
+- [初探ReactiveSwift](http://blog.luckymore.wang/2017/03/01/MVVM-ReactiveSwift-ReactiveCocoa/)
+- [ReactiveCocoa5.0 + MVVM 实践](http://blog.luckymore.wang/2017/03/10/ReactiveCocoa-5-0-MVVM-DEMO/)
+
