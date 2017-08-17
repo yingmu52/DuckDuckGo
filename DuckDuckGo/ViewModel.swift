@@ -12,17 +12,33 @@ import ReactiveSwift
 import Result
 import SwiftyJSON
 
-class ViewModel: NSObject {
+protocol ViewModelInput {
+    var searchText: MutableProperty<String> {get}
+}
+
+protocol ViewModelOutput {
+    var dataSource: MutableProperty<[JSON]> {get}
+}
+
+protocol ViewModelType {
+    var input: ViewModelInput {get}
+    var output: ViewModelOutput {get}
+}
+class ViewModel: ViewModelType, ViewModelInput, ViewModelOutput {
 	
+    var input: ViewModelInput { return self }
+    var output: ViewModelOutput { return self }
+    
     var searchText = MutableProperty("")
     var dataSource = MutableProperty([JSON]())
-	var queryString: (String) -> URLRequest = { text in
+    
+	private var queryString: (String) -> URLRequest = { text in
 		let escaped = text.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!
 		let url = URL(string: "http://api.duckduckgo.com/?q=\(escaped)&format=json")
 		return URLRequest(url: url!)
 	}
     
-	func search(text: String?) -> SignalProducer<(Data, URLResponse), AnyError>{
+	private func search(text: String?) -> SignalProducer<(Data, URLResponse), AnyError>{
 		guard let searchString = text else { return SignalProducer.empty }
 		return URLSession.shared.reactive
 			.data(with: queryString(searchString))
@@ -30,8 +46,7 @@ class ViewModel: NSObject {
 			.flatMapError { error in return SignalProducer.empty }
 	}
     
-    override init() {
-        super.init()
+    init() {
         let searchResults = searchText.signal
             .throttle(0.5, on: QueueScheduler.main)
             .filter { text in return text.characters.count > 0 }

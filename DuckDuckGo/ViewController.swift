@@ -34,10 +34,10 @@ class ViewController: UIViewController {
 		navigationItem.titleView = searchBar
 		
 		// create view model
-        viewModel.searchText <~ self.searchBar.reactive.continuousTextValues.skipNil()
+        viewModel.input.searchText <~ self.searchBar.reactive.continuousTextValues.skipNil()
 		
 		// set up table view
-        tableView.reactive.reloadData <~ viewModel.dataSource.map { _ in }
+        tableView.reactive.reloadData <~ viewModel.output.dataSource.map { _ in }
 		tableView.tableFooterView = UIView(frame: CGRect.zero)
 		tableView.estimatedRowHeight = 80
 		tableView.rowHeight = UITableViewAutomaticDimension
@@ -48,12 +48,12 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return viewModel.dataSource.value.count
+		return viewModel.output.dataSource.value.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "DuckCell") as! DuckCell
-		let json = viewModel.dataSource.value[indexPath.row]
+		let json = viewModel.output.dataSource.value[indexPath.row]
 		cell.textView.text = json["Text"].stringValue
 		let imageURL = json["Icon","URL"].stringValue
 		if imageURL.characters.count > 0 {
@@ -63,7 +63,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate, UIScrollVi
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let json = viewModel.dataSource.value[indexPath.row]
+		let json = viewModel.output.dataSource.value[indexPath.row]
 		guard let url = URL(string: json["FirstURL"].stringValue) else { return }
 		UIApplication.shared.open(url, options: [:], completionHandler: nil)
 	}
