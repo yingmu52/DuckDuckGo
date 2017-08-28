@@ -14,6 +14,7 @@
 		A0AA3D581F2ECA4500181D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AA3D571F2ECA4400181D6D /* Assets.xcassets */; };
 		A0AA3D5B1F2ECA4500181D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AA3D591F2ECA4500181D6D /* LaunchScreen.storyboard */; };
 		A0AA3D631F2ECE4300181D6D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA3D621F2ECE4300181D6D /* ViewModel.swift */; };
+		EA6F4FE31F5492730072C967 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F4FE21F5492730072C967 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A0AA3D621F2ECE4300181D6D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D43E9E31DAC97A4C97B4C00D /* Pods_DuckDuckGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDuckGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC04746BB9E4A6A5B3C5489F /* Pods-DuckDuckGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo.release.xcconfig"; sourceTree = "<group>"; };
+		EA6F4FE21F5492730072C967 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EBEB136DB57580710E60BE60 /* Pods-DuckDuckGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				A0AA3D501F2ECA4400181D6D /* AppDelegate.swift */,
 				A0AA3D521F2ECA4400181D6D /* ViewController.swift */,
 				A0AA3D621F2ECE4300181D6D /* ViewModel.swift */,
+				EA6F4FE21F5492730072C967 /* Service.swift */,
 				A0AA3D541F2ECA4400181D6D /* Main.storyboard */,
 				A0AA3D571F2ECA4400181D6D /* Assets.xcassets */,
 				A0AA3D591F2ECA4500181D6D /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AA3D531F2ECA4400181D6D /* ViewController.swift in Sources */,
+				EA6F4FE31F5492730072C967 /* Service.swift in Sources */,
 				A0AA3D631F2ECE4300181D6D /* ViewModel.swift in Sources */,
 				A0AA3D511F2ECA4400181D6D /* AppDelegate.swift in Sources */,
 			);
