@@ -7,6 +7,7 @@ target 'DuckDuckGo' do
   pod 'ReactiveCocoa', '~> 6.0' 
   pod 'SwiftyJSON'
   pod 'SDWebImage', '~> 4.0'
+  pod 'SwiftLint'
 
   # Pods for DuckDuckGo
 

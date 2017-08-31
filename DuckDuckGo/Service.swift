@@ -13,24 +13,27 @@ import Result
 import SwiftyJSON
 
 struct Service {
-    static func search(text: String?) -> SignalProducer<[JSON], AnyError>{
-        guard let searchString = text else { return SignalProducer.empty }
-        return URLSession.shared.reactive
-            .data(with: Router.search(searchString).url)
-            .retry(upTo: 2)
-            .flatMapError { error in return SignalProducer.empty }
-            .map { JSON(data: $0.0)["RelatedTopics"].arrayValue }
-    }
+  static func search(text: String?) -> SignalProducer<[JSON], AnyError> {
+    guard let searchString = text else { return SignalProducer.empty }
+    return URLSession.shared.reactive
+      .data(with: Router.search(searchString).url)
+      .retry(upTo: 2)
+      .flatMapError { _ in return SignalProducer.empty }
+      .map { JSON(data: $0.0)["RelatedTopics"].arrayValue }
+  }
 }
 
 enum Router {
-    case search(String)
-    var url: URLRequest {
-        switch self {
-        case .search(let searchText):
-            let escaped = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!
-            let url = URL(string: "http://api.duckduckgo.com/?q=\(escaped)&format=json")
-            return URLRequest(url: url!)
-        }
+  case search(String)
+  var url: URLRequest {
+    switch self {
+    case .search(let searchText):
+      let escaped = searchText
+        .addingPercentEncoding(
+          withAllowedCharacters: CharacterSet.urlHostAllowed
+        )!
+      let url = URL(string: "http://api.duckduckgo.com/?q=\(escaped)&format=json")
+      return URLRequest(url: url!)
     }
+  }
 }
